@@ -6,13 +6,25 @@
 // LAYOUT
 // -----------------------------------------------------
 
+body {
+  padding: 0 !important;
+}
+
 body > .container {
   background: @white;
   padding: 20px;
 }
 
 .page-header {
-  margin: @baseLineHeight 0;
+  margin: (@baseLineHeight / 2) 0 (@baseLineHeight * 1.5);
+  padding: 0;
+  border-bottom: none;
+}
+
+.hero-unit, .well {
+  border: none;
+  .border-radius(0);
+  .box-shadow(none);
 }
 
 // TYPOGRAPHY
@@ -63,18 +75,6 @@ blockquote {
   color: @gray;
 }
 
-.text-warning        { color: @orange; }
-a.text-warning:hover { color: darken(@orange, 10%); }
-
-.text-error          { color: @red; }
-a.text-error:hover   { color: darken(@red, 10%); }
-
-.text-info           { color: @purple; }
-a.text-info:hover    { color: darken(@purple, 10%); }
-
-.text-success        { color: @green; }
-a.text-success:hover { color: darken(@green, 10%); }
-
 // NAVBAR
 // -----------------------------------------------------
 
@@ -83,6 +83,7 @@ a.text-success:hover { color: darken(@green, 10%); }
   margin-bottom: 0;
 
   .navbar-inner {
+    padding-top: 1px;
     background-image: none;
     .box-shadow(none);
     .border-radius(0);
@@ -91,12 +92,30 @@ a.text-success:hover { color: darken(@green, 10%); }
       width: 940px;
     }
   }
+  
+  .navbar-search {
+
+    margin-top: 6px;
+
+    input {
+      font-weight: normal;
+      color: inherit;
+      border: none;
+      padding: 8px 12px 7px;
+      margin: 0;
+    }
+
+    .btn {
+      padding: 9px 10px 5px;
+      margin: 0px 0 0 -2px;
+    }
+  }
 
   .brand {
 
     font-size: 24px;
-    padding: 0px 1px 2px 1px;
-    margin: 15px 19px 12px -1px;
+    padding: 0px 1px 2px 1px !important;
+    margin: 15px 19px 12px -1px !important;
 
     &:hover {
       border-bottom: 1px solid @white;
@@ -118,10 +137,6 @@ a.text-success:hover { color: darken(@green, 10%); }
     &:hover {
       color: @grayLighter;
     }
-  }
-
-  .navbar-search .search-query {
-    line-height: normal;
   }
 }
 
@@ -155,167 +170,6 @@ div.subnav {
   }
 }
 
-// NAV
-// -----------------------------------------------------
-
-.nav {
-
-  .open .dropdown-toggle,
-  & > li.dropdown.open.active > a:hover {
-    color: @blue;
-  }
-}
-
-.nav-tabs {
-
-  & > li > a {
-    .border-radius(0);
-  }
-
-  &.nav-stacked {
-
-    & > li > a:hover {
-      background-color: @blue;
-      color: @white;
-    }
-
-    & > .active > a,
-    & > .active > a:hover {
-      background-color: @white;
-      color: @gray;
-    }
-
-    & > li:first-child > a,
-    & > li:last-child > a {
-      .border-radius(0);
-    }
-  }
-}
-
-.tabs-below,
-.tabs-left,
-.tabs-right {
-
-  & > .nav-tabs > li > a{
-    .border-radius(0);
-  }
-}
-
-.nav-pills {
-
-  & > li > a {
-    background-color: @grayLight;
-    .border-radius(0);
-    color: @black;
-
-    &:hover {
-      background-color: @black;
-      color: @white;
-    }
-  }
-
-  & > .disabled > a,
-  & > .disabled > a:hover {
-    background-color: @grayLighter;
-    color: @grayDark;
-  }
-}
-
-.nav-list {
-
-  & > li > a {
-    color: @grayDarker;
-
-    &:hover {
-      background-color: @blue;
-      color: @white;
-      text-shadow: none;
-    }
-  }
-
-  .nav-header {
-    color: @grayDarker;
-  }
-
-  .divider {
-    background-color: @gray;
-    border-bottom: none;
-  }
-}
-
-.pagination {
-
-  ul {
-
-    .box-shadow(none);
-
-    & > li > a,
-    & > li > span {
-      margin-right: 6px;
-      color: @grayDarker;
-
-      &:hover {
-        background-color: @grayDarker;
-        color: @white;
-      }
-    }
-
-    & > li:last-child > a,
-    & > li:last-child > span {
-      margin-right: 0;
-    }
-
-    & > .active > a,
-    & > .active > span { 
-      color: @white;
-    }
-
-    & > .disabled > span,
-    & > .disabled > a,
-    & > .disabled > a:hover {
-      background-color: @grayLighter;
-      color: @grayDark;
-    }
-  }
-}
-
-.pager {
-
-  li > a,
-  li > span {
-    background-color: @grayLight;
-    border: none;
-    .border-radius(0);
-    color: @grayDarker;
-
-    &:hover {
-      background-color: @grayDarker;
-      color: @white;
-    }
-  }
-
-  .disabled > a,
-  .disabled > a:hover,
-  .disabled > span {
-    background-color: @grayLighter;
-    color: @grayDark;
-  }
-
-}
-
-.breadcrumb {
-  background-color: @grayLight;
-
-  li {
-    text-shadow: none;
-  }
-
-  .divider,
-  .active {
-    color: @grayDarker;
-    text-shadow: none;
-  }
-}
 
 // BUTTONS
 // -----------------------------------------------------
@@ -358,153 +212,10 @@ div.subnav {
   }
 }
 
-// TABLES
-// -----------------------------------------------------
-
-.table {
-
-  tbody tr.success td {
-    color: @white;
-  }
-
-  tbody tr.error td {
-    color: @white;
-  }
-
-  tbody tr.info td {
-    color: @white;
-  }
-
-  &-bordered {
-    .border-radius(0);
-
-    thead:first-child tr:first-child th:first-child,
-    tbody:first-child tr:first-child td:first-child {
-      .border-radius(0);
-    }
-
-    thead:last-child tr:last-child th:first-child,
-    tbody:last-child tr:last-child td:first-child,
-    tfoot:last-child tr:last-child td:first-child {
-      .border-radius(0);
-    }
-  }
-}
 
 // DROPDOWNS
 // -----------------------------------------------------
 
 .dropdown-menu {
   .border-radius(0);
-}
-
-// ALERTS, LABELS, BADGES
-// -----------------------------------------------------
-
-.alert {
-  .border-radius(0);
-  text-shadow: none;
-
-  &-heading, h1, h2, h3, h4, h5, h6 {
-    color: @white;
-  }
-}
-
-.label {
-  min-width: 80px;
-  min-height: 80px;
-  .border-radius(0);
-  font-weight: 300;
-  text-shadow: none;
-
-  &-success {
-    background-color: @green;
-  }
-
-  &-important {
-    background-color: @red;
-  }
-
-  &-info {
-    background-color: @purple;
-  }
-
-  &-inverse {
-    background-color: @black;
-  }
-}
-
-.badge {
-
-  .border-radius(0);
-  font-weight: 300;
-  text-shadow: none;
-
-  &-success {
-    background-color: @green;
-  }
-
-  &-important {
-    background-color: @red;
-  }
-
-  &-info {
-    background-color: @purple;
-  }
-
-  &-inverse {
-    background-color: @black;
-  }
-}
-
-// MISC
-// -----------------------------------------------------
-
-.hero-unit {
-  border: none;
-  .border-radius(0);
-  .box-shadow(none);
-}
-
-.well {
-  border: none;
-  .border-radius(0);
-  .box-shadow(none);
-}
-
-[class^="icon-"], [class*=" icon-"] {
-  margin: 0 2px;
-  vertical-align: -2px;
-}
-
-a.thumbnail {
-  background-color: @grayLight;
-
-  &:hover {
-    background-color: @gray;
-    border-color: transparent;
-  }
-}
-
-.modal {
-  .border-radius(0);
-
-  &-header {
-    border-bottom: none;
-  }
-
-  &-footer {
-    border-top: none;
-    background-color: transparent;
-  }
-}
-
-.popover {
-  .border-radius(0);
-  color: @white;
-
-  &-title {
-    border-bottom: none;
-    color: @white;
-  }
 }
