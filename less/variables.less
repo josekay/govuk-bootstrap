@@ -32,8 +32,8 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        @white;
-@textColor:             #555;
+@bodyBackground:        #EAEDEF;
+@textColor:             #0B0C0C;
 
 
 // Links
@@ -45,11 +45,11 @@
 // Typography
 // -------------------------
 
-@sansFontFamily:        "New Transport";//, Calibri, Candara, Arial, sans-serif;
+@sansFontFamily:        "New Transport", Calibri, Candara, Arial, sans-serif;
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-@baseFontSize:          14px;
+@baseFontSize:          16px;
 @baseFontFamily:        @sansFontFamily;
 @baseLineHeight:        20px;
 @altFontFamily:         @serifFontFamily;
@@ -63,9 +63,9 @@
 // -------------------------
 // Based on 14px font-size and 20px line-height
 
-@fontSizeLarge:         @baseFontSize * 1.25; // ~18px
-@fontSizeSmall:         @baseFontSize * 0.85; // ~12px
-@fontSizeMini:          @baseFontSize * 0.75; // ~11px
+@fontSizeLarge:         @baseFontSize * 1.25;
+@fontSizeSmall:         @baseFontSize * 0.85;
+@fontSizeMini:          @baseFontSize * 0.75;
 
 @paddingLarge:          22px 30px; // 66px
 @paddingSmall:          2px 10px;  // 26px
@@ -141,7 +141,7 @@
 // Z-index master list
 // -------------------------
 // Used for a bird's eye view of components dependent on the z-axis
-// Try to avoid customizing these :)
+// Try to avoid customising these :)
 @zindexDropdown:          1000;
 @zindexPopover:           1010;
 @zindexTooltip:           1030;
@@ -269,18 +269,17 @@
 // GRID
 // --------------------------------------------------
 
-
-// Default 940px grid
+// Default 975px grid
 // -------------------------
 @gridColumns:             12;
-@gridColumnWidth:         60px;
-@gridGutterWidth:         20px;
+@gridColumnWidth:         62px;
+@gridGutterWidth:         21px;
 @gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
 
 // 1200px min
-@gridColumnWidth1200:     70px;
-@gridGutterWidth1200:     30px;
-@gridRowWidth1200:        (@gridColumns * @gridColumnWidth1200) + (@gridGutterWidth1200 * (@gridColumns - 1));
+@gridColumnWidth1200:     @gridColumnWidth;
+@gridGutterWidth1200:     @gridGutterWidth;
+@gridRowWidth1200:        @gridRowWidth;
 
 // 768px-979px
 @gridColumnWidth768:      42px;

@@ -13,27 +13,86 @@
     <![endif]-->
   </head>
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="#">GOV.UK Bootstrap Theme</a>
-          <div class="content">
-            <label for="search">Search</label>
-            <input type="search" name="search" id="search" title="Search" class="js-search">
-            <input class="submit" type="submit" value="Search">
+          <a class="brand" href="#">GOV.UK Bootstrap</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-search pull-left" action="">
+              <input type="text" class="search-query span2" placeholder="Search">
+            </form>
+            <ul class="nav pull-right">
+              <li><a href="#">Link</a></li>
+              <li class="divider-vertical"></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
     <div class="container">
-      <div class="hero-unit">
-        <h1>GOV.UK Bootstrap!</h1>
-        <p>This is a (Twitter) Bootstrap theme using the design principles and style guide from GOV.UK (alphagov).</p>
-        <p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-      </div>
-      <footer>
-        <p>&copy; Click Innovate 2013</p>
-      </footer>
+      <section>
+        <div class="page-header">
+          <h1>GOV.UK Bootstrap</h1>
+        </div>
+        <div class="row">
+          <div class="span4">
+            <div class="well">
+              <h1>h1. Heading 1</h1>
+              <h2>h2. Heading 2</h2>
+              <h3>h3. Heading 3</h3>
+              <h4>h4. Heading 4</h4>
+              <h5>h5. Heading 5</h5>
+              <h6>h6. Heading 6</h6>
+            </div>
+          </div>
+          <div class="span4">
+            <h3>Example body text</h3>
+            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.</p>
+          </div>
+          <div class="span4">
+          </div>
+        </div>
+        <div class="row">
+          <div class="span6">
+            <blockquote>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+            </blockquote>
+          </div>
+          <div class="span6">
+            <blockquote class="pull-right">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+            </blockquote>
+          </div>
+        </div>
+      </section>
     </div>
     <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
