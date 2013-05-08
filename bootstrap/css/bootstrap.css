@@ -6273,7 +6273,7 @@ blockquote small {
 }
 
 .navbar .navbar-inner .container {
-  width: 940px;
+  max-width: 940px;
 }
 
 .navbar .navbar-search {
@@ -6281,6 +6281,7 @@ blockquote small {
 }
 
 .navbar .navbar-search input {
+  width: 220px;
   padding: 8px 12px 7px;
   margin: 0;
   font-weight: normal;
