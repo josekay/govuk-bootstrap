@@ -1,7 +1,7 @@
 {
-  "name": "bootstrap",
-  "version": "2.3.1",
-  "main": ["./docs/assets/js/bootstrap.js", "./docs/assets/css/bootstrap.css"],
+  "name": "govuk-bootstrap",
+  "version": "0.1",
+  "main": ["./bootstrap/js/bootstrap.js", "./bootstrap/css/bootstrap.css"],
   "dependencies": {
     "jquery": "~1.8.0"
   }

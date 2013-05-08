@@ -1,14 +1,14 @@
 {
-    "name": "bootstrap"
-  , "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development."
-  , "version": "2.3.1"
-  , "keywords": ["bootstrap", "css"]
-  , "homepage": "http://twitter.github.com/bootstrap/"
-  , "author": "Twitter Inc."
+    "name": "govuk-bootstrap"
+  , "description": "A (twitter) bootstrap theme using the design principles from gov.uk (alphagov)."
+  , "version": "0.1"
+  , "keywords": ["twitter", "alphagov", "gov.uk", "bootstrap", "css"]
+  , "homepage": "https://github.com/ClickInnovate/govuk-bootstrap"
+  , "author": "Click Innovate and Twitter Inc."
   , "scripts": { "test": "make test" }
   , "repository": {
       "type": "git"
-    , "url": "https://github.com/twitter/bootstrap.git"
+    , "url": "https://github.com/ClickInnovate/govuk-bootstrap.git"
   }
   , "licenses": [
     {
