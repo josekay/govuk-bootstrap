@@ -3,6 +3,8 @@ GOV.UK (alphagov) - Bootstrap Theme
 
 A (Twitter) Bootstrap theme using the [design principles](https://www.GOV.UK/designprinciples) and [style guide](https://www.GOV.UK/designprinciples/styleguide) from [GOV.UK](https://www.GOV.UK/) (alphagov).
 
+#[LIVE DEMO](http://govuk-bootstrap.clickinnovate.com/)
+
 Twitter Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created and maintained by [Mark Otto](http://twitter.com/mdo) and [Jacob Thornton](http://twitter.com/fat).
 
 
