@@ -6197,6 +6197,7 @@ h6 {
   font-size: 13px;
 }
 
+h1,
 h2,
 h3,
 h4,
@@ -6207,6 +6208,7 @@ h6 {
 }
 
 .page-header h1 {
+  font-size: 48px;
   font-weight: normal;
 }
 
@@ -6275,8 +6277,18 @@ a.text-success:hover {
           box-shadow: none;
 }
 
+.navbar .navbar-inner .container {
+  width: 940px;
+}
+
+.navbar .brand {
+  padding: 0 1px 2px 1px;
+  margin: 15px 19px 12px -1px;
+  font-size: 24px;
+}
+
 .navbar .brand:hover {
-  color: #bbbbbb;
+  border-bottom: 1px solid #ffffff;
 }
 
 .navbar .nav > .active > a,
@@ -6562,74 +6574,6 @@ div.subnav-fixed {
           border-radius: 0;
 }
 
-select,
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"] {
-  color: #080808;
-}
-
-.control-group.warning .control-label,
-.control-group.warning .help-block,
-.control-group.warning .help-inline {
-  color: #ff7518;
-}
-
-.control-group.warning input,
-.control-group.warning select,
-.control-group.warning textarea {
-  color: #080808;
-  border-color: #ff7518;
-}
-
-.control-group.error .control-label,
-.control-group.error .help-block,
-.control-group.error .help-inline {
-  color: #ff0039;
-}
-
-.control-group.error input,
-.control-group.error select,
-.control-group.error textarea {
-  color: #080808;
-  border-color: #ff0039;
-}
-
-.control-group.success .control-label,
-.control-group.success .help-block,
-.control-group.success .help-inline {
-  color: #3fb618;
-}
-
-.control-group.success input,
-.control-group.success select,
-.control-group.success textarea {
-  color: #080808;
-  border-color: #3fb618;
-}
-
-legend {
-  color: #080808;
-  border-bottom: none;
-}
-
-.form-actions {
-  background-color: #eeeeee;
-  border-top: none;
-}
-
 .dropdown-menu {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
@@ -6736,39 +6680,6 @@ a.thumbnail {
 a.thumbnail:hover {
   background-color: #bbbbbb;
   border-color: transparent;
-}
-
-.progress {
-  height: 6px;
-  background-color: #eeeeee;
-  background-image: none;
-  -webkit-border-radius: 0;
-     -moz-border-radius: 0;
-          border-radius: 0;
-  -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-          box-shadow: none;
-}
-
-.progress .bar {
-  background-color: #007fff;
-  background-image: none;
-}
-
-.progress-info {
-  background-color: #9954bb;
-}
-
-.progress-success {
-  background-color: #3fb618;
-}
-
-.progress-warning {
-  background-color: #ff7518;
-}
-
-.progress-danger {
-  background-color: #ff0039;
 }
 
 .modal {

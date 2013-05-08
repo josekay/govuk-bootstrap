@@ -86,12 +86,20 @@ a.text-success:hover { color: darken(@green, 10%); }
     background-image: none;
     .box-shadow(none);
     .border-radius(0);
+    
+    .container {
+      width: 940px;
+    }
   }
 
   .brand {
 
+    font-size: 24px;
+    padding: 0px 1px 2px 1px;
+    margin: 15px 19px 12px -1px;
+
     &:hover {
-      color: @navbarLinkColorHover;
+      border-bottom: 1px solid @white;
     }
   }
 
@@ -383,77 +391,6 @@ div.subnav {
   }
 }
 
-// FORMS
-// -----------------------------------------------------
-
-select, textarea, input[type="text"], input[type="password"], input[type="datetime"],
-input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"],
-input[type="week"], input[type="number"], input[type="email"], input[type="url"],
-input[type="search"], input[type="tel"], input[type="color"] {
-  color: @grayDarker;
-}
-
-.control-group {
-
-  &.warning {
-
-    .control-label,
-    .help-block,
-    .help-inline {
-      color: @orange;
-    }
-
-    input,
-    select,
-    textarea {
-      border-color: @orange;
-      color: @grayDarker;
-    }
-  }
-
-  &.error {
-
-    .control-label,
-    .help-block,
-    .help-inline {
-      color: @red;
-    }
-
-    input,
-    select,
-    textarea {
-      border-color: @red;
-      color: @grayDarker;
-    }
-  }
-
-  &.success {
-
-    .control-label,
-    .help-block,
-    .help-inline {
-      color: @green;
-    }
-
-    input,
-    select,
-    textarea {
-      border-color: @green;
-      color: @grayDarker;
-    }
-  }
-}
-
-legend {
-  border-bottom: none;
-  color: @grayDarker;
-}
-
-.form-actions {
-  border-top: none;
-  background-color: @grayLighter;
-}
-
 // DROPDOWNS
 // -----------------------------------------------------
 
@@ -549,35 +486,6 @@ a.thumbnail {
   }
 }
 
-.progress {
-  height: 6px;
-  .border-radius(0);
-  .box-shadow(none);
-  background-color: @grayLighter;
-  background-image: none;
-
-  .bar {
-    background-color: @blue;
-    background-image: none;
-  }
-
-  &-info {
-    background-color: @purple;
-  }
-
-  &-success {
-    background-color: @green;
-  }
-
-  &-warning {
-    background-color: @orange;
-  }
-
-  &-danger {
-    background-color: @red;
-  }
-}
-
 .modal {
   .border-radius(0);
 
@@ -599,5 +507,4 @@ a.thumbnail {
     border-bottom: none;
     color: @white;
   }
-
 }
