@@ -12,10 +12,10 @@
 @black:                 #000;
 @grayDarker:            #080808;
 @grayDark:              #999;
-@gray:                  #bbb;
-@grayLight:             #dfdfdf;
-@grayLighter:           #eee;
-@white:                 #fff;
+@gray:                  #BBB;
+@grayLight:             #DFDFDF;
+@grayLighter:           #EAEDEF;
+@white:                 #FFF;
 
 
 // Accent colors
@@ -38,8 +38,8 @@
 
 // Links
 // -------------------------
-@linkColor:             @blue;
-@linkColorHover:        darken(@linkColor, 10%);
+@linkColor:             #2E3191;
+@linkColorHover:        #2E8ACA;
 
 
 // Typography
@@ -55,7 +55,7 @@
 @altFontFamily:         @serifFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    300;    // instead of browser default, bold
+@headingsFontWeight:    bold;
 @headingsColor:         @grayDarker; // empty to use BS default, @textColor
 
 
@@ -79,9 +79,9 @@
 // Tables
 // -------------------------
 @tableBackground:                   transparent; // overall background-color
-@tableBackgroundAccent:             #f9f9f9; // for striping
+@tableBackgroundAccent:             #F9F9F9; // for striping
 @tableBackgroundHover:              #E8F8FD; // for hover
-@tableBorder:                       #ddd; // table and cell border
+@tableBorder:                       #DDD; // table and cell border
 
 // Buttons
 // -------------------------
@@ -152,8 +152,8 @@
 
 // Sprite icons path
 // -------------------------
-@iconSpritePath:          "../img/glyphicons-halflings.png";
 @iconWhiteSpritePath:     "../img/glyphicons-halflings-white.png";
+@iconSpritePath:          @iconWhiteSpritePath; //"../img/glyphicons-halflings.png";
 
 
 // Input placeholder text color
